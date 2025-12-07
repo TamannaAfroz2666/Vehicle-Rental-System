@@ -31,6 +31,7 @@ export const createBookingController = async (req: AuthRequest, res: Response) =
             return res.status(500).json({ success: false, message: 'data is not coming from service' })
         }
         return res.status(201).json({ success: true, message: 'Vehicle created successfully', data })
+        
     } catch (err: any) {
         return res.status(500).json({ success: false, message: err.message })
 

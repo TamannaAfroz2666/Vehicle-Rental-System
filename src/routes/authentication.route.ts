@@ -5,5 +5,5 @@ import { loginController, singupController } from "../controller/authentication.
 export const authRouter = express.Router();
 
 authRouter.post ('/signup', validateRegistration, handleValidation, singupController );
-authRouter.post('/signin', valdateLogin, handleValidation, loginController)
+authRouter.post('/signin', valdateLogin, handleValidation, loginController);
 
