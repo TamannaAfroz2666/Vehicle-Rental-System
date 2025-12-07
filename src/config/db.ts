@@ -20,6 +20,7 @@ export const pool = new Pool(
       }
 );
 
+
 export const connectDb = async () => {
   try {
     await pool.query("SELECT NOW()");
